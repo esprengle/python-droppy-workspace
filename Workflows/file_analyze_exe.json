@@ -18,7 +18,7 @@
       "task": "Filter.ByExtensions",
       "kwargs":
       {
-        "extensions": ["exe"]
+        "extensions": ["exe", ""]
       }
     },
     {
