@@ -1,0 +1,46 @@
+{
+  "name": "Audio flac re-encode",
+  "author": "guenther@droppyapp.com",
+  "description": "Re-encode a flac file.",
+  "documentation": "",
+  "image": "folder-music.png",
+  "interpreterName": "macOS pre-installed",
+  "queue": [
+    {
+      "task": "Filter.ByUTIs",
+      "kwargs":
+      {
+        "utis": ["files", "public.url"]
+      }
+    },
+    {
+      "task": "FileSystem.ExitOnNoInput"
+    },
+    {
+      "task": "Filter.ByExtensions",
+      "kwargs":
+      {
+        "extensions": ["flac"]
+      }
+    },
+    {
+      "task": "FileSystem.ExitOnNoInput"
+    },
+    {
+      "task": "Audio.FlacReEncode",
+      "kwargs":
+      {
+        "copy_tags": true
+      }
+    },
+    {
+      "task": "FileSystem.DeleteOriginals"
+    },
+    {
+      "task": "FileSystem.CopyToSourceDirectory",
+      "kwargs": {
+        "fallback_path": "~/Downloads"
+      }
+    }
+  ]
+}
