@@ -57,3 +57,13 @@ def get_file_paths_from_directory(dir_path):
         for f in files:
             file_paths.append(os.path.join(root, f))
     return file_paths
+
+
+def clean_dsstore(dir_path):
+    """
+    Walk a directory and get rid of all those useless hidden .DS_Store files.
+    """
+    for root, dirs, files in os.walk(dir_path):
+        for f in files:
+            if f == '.DS_Store':
+                os.remove(os.path.join(dir_path, root, f))
