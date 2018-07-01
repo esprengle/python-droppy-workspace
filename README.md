@@ -61,9 +61,3 @@ To automate this two scripts are provided:
 - [pytest](https://docs.pytest.org/en/latest/)
 - [py.path](http://py.readthedocs.io/en/latest/path.html)
 - [Collection of sample files](http://techslides.com/sample-files-for-development)
-
-## Run repository
-
-The Python module that **DropPy** launches for running a *Task* is also open source.
-
-[https://github.com/geberl/droppy-run](https://github.com/geberl/droppy-run)
