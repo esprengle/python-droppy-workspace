@@ -4,7 +4,7 @@
   "description": "Rotate any dropped image clockwise by 90 degrees, overwriting the source file.",
   "documentation": "https://docs.droppyapp.com/workflows/image-rotate-by-90deg",
   "image": "image-rotate.png",
-  "interpreterName": "macOS pre-installed",
+  "interpreterName": "Python 3.7 Pipenv",
   "queue": [
     {
       "task": "Filter.ByUTIs",

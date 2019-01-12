@@ -4,7 +4,7 @@
   "description": "Upload an image to the popular image hosting service imgur.com.",
   "documentation": "https://docs.droppyapp.com/workflows/image-upload-to-imgur",
   "image": "cloud.png",
-  "interpreterName": "macOS pre-installed",
+  "interpreterName": "Python 3.7 Pipenv",
   "queue": [
     {
       "task": "Filter.ByUTIs",

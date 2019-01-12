@@ -4,7 +4,7 @@
   "description": "Add text from browser to a markdown file in Documents.",
   "documentation": "https://docs.droppyapp.com/workflows/browser-to-notes-md",
   "image": "markdown.png",
-  "interpreterName": "macOS pre-installed",
+  "interpreterName": "Python 3.7 Pipenv",
   "queue": [
     {
       "task": "Filter.ByUTIs",

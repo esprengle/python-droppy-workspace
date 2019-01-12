@@ -4,7 +4,7 @@
   "description": "Rename an image using info from its EXIF metadata.",
   "documentation": "https://docs.droppyapp.com/workflows/image-rename-by-exif-metadata",
   "image": "folder-pictures.png",
-  "interpreterName": "macOS pre-installed",
+  "interpreterName": "Python 3.7 Pipenv",
   "queue": [
     {
       "task": "Filter.ByUTIs",
