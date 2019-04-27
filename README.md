@@ -22,10 +22,10 @@ Instead [Pipenv](https://pipenv.readthedocs.io/en/latest/) is used: Pipenv uses 
 ```bash
 # Check environment
 $ python3 --version
-> Python 3.7.2
+> Python 3.7.3
 
 $ pip3 --version
-> pip 18.1 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
+> pip 19.0.3 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
 
 # Install pipenv (via Homebrew)
 $ brew update
