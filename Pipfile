@@ -12,6 +12,7 @@ pillow = "*"
 six = "*"
 pytesseract = "*"
 html2text = "*"
+pyheif = "==0.3.2"
 
 [requires]
 python_version = "3.7"

@@ -1,0 +1,43 @@
+{
+  "name": "Image convert HEIF to JPG",
+  "author": "guenther@droppyapp.com",
+  "description": "Convert an image from the HEIC format (usually an iPhone photo) into the much more common JPG format. Does not always work.",
+  "image": "image.png",
+  "interpreterName": "Python 3.7 Pipenv",
+  "queue": [
+    {
+      "task": "Filter.ByUTIs",
+      "kwargs":
+      {
+        "utis": ["files"]
+      }
+    },
+    {
+      "task": "FileSystem.ExitOnNoInput"
+    },
+    {
+      "task": "Filter.ByExtensions",
+      "kwargs":
+      {
+        "extensions": ["heic"]
+      }
+    },
+    {
+      "task": "FileSystem.ExitOnNoInput"
+    },
+    {
+      "task": "Image.ConvertHeic",
+      "kwargs":
+      {
+        "extension": "jpg"
+      }
+    },
+    {
+      "task": "FileSystem.CopyToSourceDirectory",
+      "kwargs":
+      {
+        "fallback_path": "~/Downloads"
+      }
+    }
+  ]
+}
