@@ -1,4 +1,4 @@
-# droppy-workspace
+# DropPy Workspace
 
 ![python](https://img.shields.io/badge/python-2.7%2C%203.6-brightgreen.svg)
 ![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
@@ -7,9 +7,11 @@
 
 All the _Workflows_, _Tasks_ and _Images_ that come with the **DropPy** macOS app.
 
-## Product page
+## Repos
 
-[https://droppy.eberl.se](https://droppy.eberl.se) (currently offline)
+- App [https://github.com/geberl/swift-droppy](https://github.com/geberl/swift-droppy)
+- Workspace [https://github.com/geberl/python-droppy-workspace](https://github.com/geberl/python-droppy-workspace) **you are here**
+- Docs [https://github.com/geberl/md-droppy-docs](https://github.com/geberl/md-droppy-docs)
 
 ## Requirements via Pipenv
 
