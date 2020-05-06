@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 import os
 import sys
 from distutils.dir_util import copy_tree
+from pathlib import Path
 
 sys.path.append(
     os.path.
